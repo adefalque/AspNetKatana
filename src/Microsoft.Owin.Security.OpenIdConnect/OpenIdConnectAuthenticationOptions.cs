@@ -101,6 +101,11 @@ namespace Microsoft.Owin.Security.OpenIdConnect
         public HttpMessageHandler BackchannelHttpHandler { get; set; }
 
         /// <summary>
+        /// Used to communicate with the remote identity provider.
+        /// </summary>
+        public HttpClient Backchannel { get; set; }
+
+        /// <summary>
         /// Gets or sets the timeout when using the backchannel to make an http call.
         /// </summary>
         [SuppressMessage("Microsoft.Usage", "CA2208:InstantiateArgumentExceptionsCorrectly", Justification = "By design we use the property name in the exception")]

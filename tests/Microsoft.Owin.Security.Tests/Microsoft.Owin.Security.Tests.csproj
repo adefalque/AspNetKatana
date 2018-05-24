@@ -38,6 +38,12 @@
       <HintPath>..\..\packages\Microsoft.IdentityModel.Logging.5.2.0\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.5.2.0\lib\net451\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.2.0\lib\net451\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.IdentityModel.Tokens.5.2.0\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
       <Private>True</Private>
@@ -92,6 +98,10 @@
     <Compile Include="OAuth\OAuth2AuthorizationServerImplicitGrantTests.cs" />
     <Compile Include="OAuth\OAuth2TestServer.cs" />
     <Compile Include="JwtHandlerTests.cs" />
+    <Compile Include="OpenIdConnect\MockOpenIdConfigurationManager.cs" />
+    <Compile Include="OpenIdConnect\MockSecurityTokenValidator.cs" />
+    <Compile Include="OpenIdConnect\MockStateDataFormat.cs" />
+    <Compile Include="OpenIdConnect\OpenIdConnectMiddlewareTests.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

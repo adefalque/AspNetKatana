@@ -47,5 +47,7 @@ namespace Microsoft.Owin.Security.Notifications
         /// <remarks>This is the redirect_uri that was sent in the id_token + code OpenIdConnectRequest.</remarks>
         [SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings", Justification = "user controlled, not necessarily a URI")]
         public string RedirectUri { get; set; }
+
+        public OpenIdConnectMessage TokenEndpointRequest { get; set; }
     }
 }
